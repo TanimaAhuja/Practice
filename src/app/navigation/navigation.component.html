@@ -1,0 +1,31 @@
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"  (click)="isMenuCollapsed = !isMenuCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav  ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="dance" routerLinkActive="active-link" (click)="isMenuCollapsed = true">DANCE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="meditation" routerLinkActive="active-link" (click)="isMenuCollapsed = true">MEDITATION</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="cooking" routerLinkActive="active-link" (click)="isMenuCollapsed = true">COOKING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="travelling" routerLinkActive="active-link" (click)="isMenuCollapsed = true">TRAVELLING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="music" routerLinkActive="active-link" (click)="isMenuCollapsed = true">MUSIC</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="contact" routerLinkActive="active-link" (click)="isMenuCollapsed = true">CONTACT</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  

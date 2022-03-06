@@ -1,0 +1,27 @@
+.travel{
+    width:100%;
+    height: auto; 
+    margin-top: 0.05%; 
+    margin-bottom: 0.5%;
+}
+@media only screen and (max-width: 1280px){
+    .travel{ margin-top: 40px !important;
+    }
+}
+.text {
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: 'Orienta', sans-serif;
+    letter-spacing: 0.5px;
+    font-style: normal;
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  /* .cardSet{
+      margin-left: 10px;
+      margin-right: 20px;
+  } */

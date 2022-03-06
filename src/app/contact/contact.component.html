@@ -1,0 +1,46 @@
+<br>
+<br>
+<br>
+<br>
+
+
+<form #basicForm="ngForm" (submit)="getUserData(basicForm)">
+    <input type="text" ngModel name="name" placeholder="Enter Name">
+    <br>
+    <input type="text" ngModel name="email" placeholder="Enter email">
+    <br>
+    <input type="text" ngModel name="phone" placeholder="Enter Phone Number">
+    <br>
+    <input type="text" ngModel name="comments" placeholder="Enter Comments">
+    <br>
+<button>Submit</button>
+</form>
+
+
+
+
+<div class="card mb-50" style="padding: 40px;">
+    <div class="row">
+        <div class="col-md-12">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <tr *ngFor="let user of users; let i=index;">
+        <th scope="row">{{user?.name}}</th>
+        <td>{{user?.email}}</td>
+        <td>{{user?.phone}}</td>
+        <td>{{user?.comments}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</div>
